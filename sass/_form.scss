@@ -1,0 +1,61 @@
+.form {
+	margin: 0 auto;
+	width: 80%;
+	height: 70%;
+	grid-column-start: 3;
+	grid-column-end: 11;
+	grid-row-start: 6;
+	grid-row-end: 8;
+	background: rgba(51, 57, 63, .8);
+	border-radius: 5px;
+	border: none;
+
+	&__input {
+		margin: 0 auto;
+		width: 70%;
+		height: 100%;
+		border: none;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__fieldset {
+		height: 50%;
+		background-color: #fff;
+		border-radius: 5px;
+		border: 1px solid #fff;
+	} 
+
+	&__button {
+		margin: 0 auto;
+		width: 28%;
+		min-width: 113px;
+		height: 85%;
+		border-radius: 5px;
+		border: none;
+		font-size: 22px;
+		color: #fff;
+		background-color: rgba(95, 96, 98, 1);
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+@import "header";
+@import "form";
+@import "button";
+@import "background";
+@import "block1-text";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	line-height: 1.2;
+}
+
+.wrapper {
+	margin: 0 auto;
+	display: grid;
+	width: 90%;
+	height: 100%;
+	min-width: 819px;
+	max-width: 1092px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(10, 10%);
+	grid-column-gap: 1.0989011%;
+}
+
+
+

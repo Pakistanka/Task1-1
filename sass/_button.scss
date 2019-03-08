@@ -1,0 +1,19 @@
+.button {
+	margin: 0 auto;
+	width: 70%;
+	height: 65%;
+	grid-column-start: 5;
+	grid-column-end: 9;
+	grid-row-start: 8;
+	grid-row-end: 9;
+	font-size: 22px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	background-color: rgba(119, 181, 60, 1);
+
+	&:focus{
+		outline: none;
+	}
+}
