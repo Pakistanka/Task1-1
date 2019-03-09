@@ -5,20 +5,23 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2; }
-
-.header__logo {
-  margin: 20px auto;
-  width: 45%;
-  stroke: #fff;
-  fill: #fff;
-  stroke-width: .5; }
-
-.header__text {
-  margin: 20px auto;
-  width: 45%;
-  font-size: 14px;
-  font-weight: 900;
-  color: #fff; }
+  .header__logo {
+    margin: 20px auto;
+    width: 45%;
+    stroke: #fff;
+    fill: #fff;
+    stroke-width: .5; }
+    .header__logo__color {
+      fill: #b22725;
+      stroke: #b22725; }
+  .header__text {
+    margin: 20px auto;
+    width: 45%;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff; }
+    .header__text__color {
+      color: #000; }
 
 .form {
   margin: 0 auto;
@@ -59,7 +62,7 @@
       outline: none; }
 
 .button {
-  margin: 0 auto;
+  margin: 25px auto 0;
   width: 70%;
   height: 65%;
   grid-column-start: 5;
@@ -74,6 +77,9 @@
   background-color: #77b53c; }
   .button:focus {
     outline: none; }
+  .button__position {
+    grid-row-start: 9;
+    grid-row-end: 10; }
 
 .block1 {
   width: 100%;
@@ -85,8 +91,7 @@
 
 .block2 {
   width: 100%;
-  height: 100vh;
-  background-color: #d1d1d1; }
+  height: 100vh; }
 
 .block3 {
   width: 100%;
@@ -96,7 +101,7 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
-.text {
+.block1__text {
   margin: 20px auto;
   grid-column-start: 6;
   grid-column-end: 8;
@@ -104,7 +109,7 @@
   font-weight: bold;
   color: #fff; }
 
-.title1 {
+.block1__text2 {
   margin: 0 auto;
   grid-column-start: 3;
   grid-column-end: 11;
@@ -117,7 +122,7 @@
   text-align: center;
   color: #fff; }
 
-.title2 {
+.block1__text3 {
   margin: 0 auto;
   grid-column-start: 2;
   grid-column-end: 12;
@@ -130,10 +135,155 @@
   text-align: center;
   color: #fff; }
 
+.arrow-down {
+  margin: 0 auto;
+  grid-column-start: 3;
+  grid-column-end: 12;
+  grid-row-start: 10;
+  grid-column-end: 11; }
+  .arrow-down:focus {
+    outline: none; }
+
+.block2__text {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  grid-column-start: 3;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 900;
+  color: #333333; }
+
+.image {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url("../images/features/businesscard.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.image2 {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url("../images/features/dns.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.image3 {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url("../images/features/certificate.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.image4 {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url("../images/features/autorenewal.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.image5 {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  background-image: url("../images/features/cloud.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.image6 {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  background-image: url("../images/features/freessl.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.image7 {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  background-image: url("../images/features/dnssec.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.image8 {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  background-image: url("../images/features/redirect.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.caption {
+  margin: 0 auto;
+  width: 90%;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center; }
+  .caption__column1 {
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .caption__column2 {
+    grid-column-start: 4;
+    grid-column-end: 7; }
+  .caption__column3 {
+    grid-column-start: 7;
+    grid-column-end: 10; }
+  .caption__column4 {
+    grid-column-start: 10;
+    grid-column-end: 13; }
+  .caption span {
+    text-transform: uppercase; }
+  .caption__row {
+    grid-row-start: 8;
+    grid-row-end: 9; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans';
   line-height: 1.2; }
 
 .wrapper {
