@@ -17,6 +17,7 @@
     "node-sass": "^4.11.0"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tooltipster": "^4.2.6"
   }
 }
