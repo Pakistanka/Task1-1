@@ -1,5 +1,5 @@
 .button {
-	margin: 0 auto;
+	margin: 25px auto 0;
 	width: 70%;
 	height: 65%;
 	grid-column-start: 5;
@@ -15,5 +15,10 @@
 
 	&:focus{
 		outline: none;
+	}
+
+	&__position {
+		grid-row-start: 9;
+		grid-row-end: 10;
 	}
 }
