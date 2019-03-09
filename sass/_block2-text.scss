@@ -1,0 +1,161 @@
+.block2__text {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	grid-column-start: 3;
+	grid-column-end: 11;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 900;
+	color: rgb(51, 51, 51);
+}
+
+.image {
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	background-image: url("../images/features/businesscard.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.image2 {
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	background-image: url("../images/features/dns.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.image3 {
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	grid-column-start: 8;
+	grid-column-end: 9;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	background-image: url("../images/features/certificate.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.image4 {
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	grid-column-start: 11;
+	grid-column-end: 12;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	background-image: url("../images/features/autorenewal.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.image5 {
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-image: url("../images/features/cloud.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.image6 {
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-image: url("../images/features/freessl.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.image7 {
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	grid-column-start: 8;
+	grid-column-end: 9;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-image: url("../images/features/dnssec.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.image8 {
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+	grid-column-start: 11;
+	grid-column-end: 12;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-image: url("../images/features/redirect.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.caption {
+	margin: 0 auto;
+	width: 90%;
+	grid-row-start: 5;
+	grid-row-end: 6;
+	font-size: 20px;
+	font-weight: bold;
+  color: rgb(51, 51, 51);
+  text-align: center;
+
+	&__column1 {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	&__column2 {
+		grid-column-start: 4;
+		grid-column-end: 7;
+	}
+
+	&__column3 {
+		grid-column-start: 7;
+		grid-column-end: 10;
+	}
+
+	&__column4 {
+		grid-column-start: 10;
+		grid-column-end: 13;
+	}
+
+	& span {
+		text-transform: uppercase;
+	}
+
+	&__row {
+		grid-row-start: 8;
+		grid-row-end: 9;
+	}
+
+}
+
+
+
