@@ -4,4 +4,8 @@
 	grid-column-end: 12;
 	grid-row-start: 10;
 	grid-column-end: 11;
+
+	&:focus {
+		outline: none;
+	}
 }
