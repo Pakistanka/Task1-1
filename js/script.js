@@ -3,8 +3,13 @@ $(document).ready(function(){
     arrows: false,
     vertical: true,
   	dots: true,
-  	slidesToShow: 1,
-  	slidesToScroll: 1,
     infinite: false,
+    verticalSwiping: true,
   });
+});
+
+$(document).ready(function() {
+   $('.tooltip').tooltipster({
+   	theme: 'tooltipster-light',
+   });
 });
