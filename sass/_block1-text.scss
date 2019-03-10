@@ -1,4 +1,4 @@
-.text {
+.block1__text {
 	margin: 20px auto;
 	grid-column-start: 6;
 	grid-column-end: 8;
@@ -7,7 +7,7 @@
 	color: #fff;
 }
 
-.title1 {
+.block1__text2 {
 	margin: 0 auto;
 	grid-column-start: 3;
 	grid-column-end: 11;
@@ -21,7 +21,7 @@
 	color: #fff;
 }
 
-.title2 {
+.block1__text3 {
 	margin: 0 auto;
 	grid-column-start: 2;
 	grid-column-end: 12;
