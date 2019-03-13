@@ -10,15 +10,27 @@
 	font-weight: bold;
 	border-radius: 5px;
 	border: none;
-	color: #fff;
-	background-color: rgba(119, 181, 60, 1);
+	color: $white;
+	background-color: $green;
 
 	&:focus{
 		outline: none;
 	}
 
-	&__position {
+	&:hover {
+		border: 1px solid $green;
+		color: $green;
+		background-color: $white-0;
+	}
+
+	&__position-second {
 		grid-row-start: 9;
 		grid-row-end: 10;
+	}
+
+	&__position-third {
+		margin: 0 auto 25px;
+		grid-row-start: 7;
+		grid-row-end: 8;
 	}
 }
