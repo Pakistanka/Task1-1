@@ -2,14 +2,18 @@ $(document).ready(function(){
   $('.carousel').slick({
     arrows: false,
     vertical: true,
-  	dots: true,
     infinite: false,
-    verticalSwiping: true,
+    verticalSwiping: true
   });
-});
 
-$(document).ready(function() {
-   $('.tooltip').tooltipster({
-   	theme: 'tooltipster-light',
+     $('.tooltip').tooltipster({
+   	theme: 'tooltipster-light'
    });
+
+  $('.form__text, .form__link').hide();
+
+  $('form__button').click(function() {
+  	$('.form__text, .form__link').show();
+  });
+  
 });
