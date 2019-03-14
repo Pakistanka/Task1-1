@@ -1,0 +1,15 @@
+.footer {
+	padding-top: 30px;
+	grid-column-start: 1;
+	grid-column-end: 13;
+	grid-row-start: 10;
+	grid-row-end: 11;
+  font-size: 11.5px;
+  color: $white-50;
+
+  & a {
+  	color: $white-50;
+  	text-decoration: none;
+  	border-bottom: 1px solid $white-50;
+  }
+}
