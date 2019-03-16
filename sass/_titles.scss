@@ -1,20 +1,38 @@
 .h1 {
 	margin: 0 auto;
-	grid-column-start: 2;
-	grid-column-end: 12;
+	grid-column-start: 1;
+	grid-column-end: 13;
 	grid-row-start: 3;
 	grid-row-end: 7;
 	font-size: 48px;
-	color: $white;
+  text-align: center;
 	font-weight: bold;
-	text-align: center;
+  color: $white;
+
+  @media screen and (min-width: $width-600) and (max-width: $width-858) {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: $width-421) and (max-width: $width-599) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: $width-320) and (max-width: $width-420) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 21px;
+  }
 }
 
 .h2 {
+  text-align: center;
 	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 80px;
 	font-weight: bold;
-	text-align: center;
 	color: $white;
 
 	&__up {
@@ -24,6 +42,28 @@
 		grid-column-end: 11;
 		grid-row-start: 2;
 		grid-row-end: 3;
+
+    @media screen and (min-width: $width-600) and (max-width: $width-858) {
+      grid-column-start: 1;
+      grid-column-end: 8;
+      font-size: 64px;
+    }
+
+    @media screen and (min-width: $width-421) and (max-width: $width-599) {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: $width-320) and (max-width: $width-420) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      font-size: 34px;
+    }
 	}
 
 	&__down {
@@ -33,6 +73,28 @@
 		grid-column-end: 12;
 		grid-row-start: 3;
 		grid-row-end: 4;
+
+    @media screen and (min-width: $width-600) and (max-width: $width-858) {
+      grid-column-start: 1;
+      grid-column-end: 8;
+      font-size: 64px;
+    }
+
+    @media screen and (min-width: $width-421) and (max-width: $width-599) {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: $width-320) and (max-width: $width-420) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      font-size: 34px;
+    }  
 	}
 }
 
@@ -46,6 +108,24 @@
 	font-size: 30px;
 	font-weight: bold;
 
+  @media screen and (min-width: $width-600) and (max-width: $width-858) {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    font-size: 28px;
+  }
+  @media screen and (min-width: $width-421) and (max-width: $width-599) {
+    margin-bottom: 10px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $width-320) and (max-width: $width-420) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 18px;
+  }
+
 	&__color-first {
 		color: $black-light;
 	}
@@ -56,13 +136,28 @@
 }
 
 .h4 {
-	margin: 20px auto;
+	margin: auto auto;
 	grid-column-start: 6;
 	grid-column-end: 8;
 	font-size: 12px;
 	font-weight: bold;
 	color: $white;
+
+  @media screen and (min-width: $width-600) and (max-width: $width-858){
+    grid-column-start: 3;
+    grid-column-end: 6;
+  }
+  @media screen and (min-width: $width-421) and (max-width: $width-599) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  @media screen and (min-width: $width-320) and (max-width: $width-420) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
-
-
-

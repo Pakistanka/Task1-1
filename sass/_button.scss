@@ -1,17 +1,32 @@
 .button {
 	margin: 25px auto 0;
-	width: 70%;
+	width: 250px;
 	height: 47px;
 	grid-column-start: 5;
 	grid-column-end: 9;
 	grid-row-start: 8;
 	grid-row-end: 9;
 	font-size: 22px;
-	font-weight: bold;
+	font-weight: 600;
 	border-radius: 5px;
 	border: none;
 	color: $white;
 	background-color: $green;
+
+	@media screen and (min-width: $width-600) and (max-width: $width-858) {
+		grid-column-start: 1;
+		grid-column-end: 8;
+	}
+
+	@media screen and (min-width: $width-421) and (max-width: $width-599) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  @media screen and (min-width: $width-320) and (max-width: $width-420) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 
 	&:focus{
 		outline: none;
@@ -22,15 +37,31 @@
 		color: $green;
 		background-color: $white-0;
 	}
-
+/***************************
+BUTTON POSITION FOR BLOCK 2
+***************************/	
 	&__position-second {
 		grid-row-start: 9;
 		grid-row-end: 10;
-	}
 
+    @media screen and (min-width: $width-320) and (max-width: $width-420) {
+      margin-top: 38px;
+      grid-row-start: 9;
+      grid-row-end: 10
+    }
+	}
+/***************************
+BUTTON POSITION FOR BLOCK 2
+***************************/	
 	&__position-third {
-		margin: 0 auto 25px;
+		margin: 20px auto 5px;
 		grid-row-start: 7;
 		grid-row-end: 8;
+
+    @media screen and (min-width: $width-320) and (max-width: $width-420) {
+      margin: 10px auto 5px;
+      grid-row-start: 6;
+      grid-row-end: 7;
+    }
 	}
 }

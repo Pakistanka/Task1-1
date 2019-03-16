@@ -11,7 +11,6 @@
 @import "../fonts/transfonter/stylesheet.css";
 
 
-
 body {
 	margin: 0;
 	padding: 0;
@@ -22,11 +21,29 @@ body {
 .wrapper {
 	margin: 0 auto;
 	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(10, 10%);
+	grid-column-gap: 1.0989011%;
 	width: 90%;
 	height: 100%;
 	min-width: 819px;
 	max-width: 1092px;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(10, 10%);
-	grid-column-gap: 1.0989011%;
+
+	@media screen and (min-width: $width-600) and (max-width: $width-858) {
+		margin: 0 20px;
+		grid-template-columns: repeat(7, 1fr);
+		min-width: 560px;
+	}
+
+	@media screen and (min-width: $width-421) and (max-width: $width-599) {
+		margin: 0 20px;
+		grid-template-columns: repeat(5, 1fr);
+		min-width: 381px;
+	}
+
+	@media screen and (min-width: $width-320) and (max-width: $width-420) {
+		margin: 0 20px;
+		grid-template-columns: repeat(3, 1fr);
+		min-width: 280px;
+	}
 }

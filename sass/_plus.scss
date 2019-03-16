@@ -1,3 +1,7 @@
+/************************
+JINO PLUS LOYALTY SYSTEM
+************************/
+
 .plus {
 	margin-top: 25px;
 	display: flex;
@@ -12,17 +16,54 @@
 	color: $white;
 	background-color: $pink;
 
+  @media screen and (min-width: $width-600) and (max-width: $width-858) {
+    grid-column-start: 1;
+    grid-column-end: 8;
+  }
+
+  @media screen and (min-width: $width-421) and (max-width: $width-599) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  @media screen and (min-width: $width-320) and (max-width: $width-420) {
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 10;
+    height: 85%;
+  }
+
 	&__text {
 		margin: 0 auto;
 		padding-left: 10px;
 		width: 70%;
-  		font-size: 20px;
-  		text-align: left;
+    text-align: left;
+  	font-size: 20px;
+  	
+    @media screen and (min-width: $width-600) and (max-width: $width-858) {
+      width: 65%;
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $width-421) and (max-width: $width-599) {
+      width: 60%;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $width-320) and (max-width: $width-420) {
+      margin: auto auto;
+      padding-left: 0;
+      width: 90%;
+      text-align: center;
+      font-size: 14px;
+    }
 	}
 
 	&__link {
-		color: $white;
 		text-decoration: none;
+    color: $white;
 		border-bottom: 1px solid $white;
 	}
 
@@ -31,23 +72,51 @@
 		width: 2.5px;
 		height: 70%;
 		background-color: $pink-light;
+
+    @media screen and (min-width: $width-320) and (max-width: $width-420) {
+      margin: auto auto;
+      width: 70%;
+      height: 2.5px;
+    }
 	}
 
 	&__thousand {
 		display: flex;
-		justify-content: space-evenly;
 		align-items: center;
 		margin: 0 auto;
-		width: 17%;
+		width: 20%;
+    text-align: center;
 		font-size: 50px;
  	 	font-weight: bold;
- 	 	text-align: center;
+ 	 	
+    @media screen and (min-width: $width-600) and (max-width: $width-858) {
+      width: 25%;
+      font-size: 45px;
+    }
+
+    @media screen and (min-width: $width-421) and (max-width: $width-599) {
+      width: 30%;
+      font-size: 37px;
+    }
+
+    @media screen and (min-width: $width-320) and (max-width: $width-420) {
+      margin: auto auto;
+      width: 90%;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+    }
 	}
 
 	&__image {
+		margin-left: 10px;
 		width: 30px;
 		height: 30px;
 		fill: $white;
 		stroke: $white;
+
+    @media screen and (min-width: $width-600) and (max-width: $width-858) {
+      margin-left: 5px;
+    }
 	}
 }

@@ -1,14 +1,15 @@
 .header {
 	margin-left: 10px;
 	display: flex;
+	align-items: center;
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 2;
 
 	&__logo {
-		margin: 20px auto;
-		width: 45%;
+		margin: 0;
+		width: 60px;
 		stroke: $white;
 		fill: $white;
 		stroke-width: .5;
@@ -20,8 +21,9 @@
 	}
 
 	&__text {
-		margin: 20px auto;
-		width: 45%;
+		display: block;
+		margin: 0 auto 0 5px;
+		width: 70px;
 		font-size: 14px;
 		font-weight: 900;
 		color: $white;
@@ -31,6 +33,7 @@
 		}
 	}
 }
+
 
 
 
