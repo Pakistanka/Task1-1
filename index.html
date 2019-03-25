@@ -42,8 +42,9 @@
           <h2 class="h2 h2__down">за домен .RU - 39&#8381;</h2>
 
           <form class="form">
-            <div class="form__fieldset">
-              <input class="form__input" onclick="event.preventDefault()" type="text" name="">
+            <div class="form__fieldset" onclick="event.preventDefault()">
+              <!-- preventDefault must be here -->
+              <input class="form__input" type="text" name="">
               <button class="form__button">Проверить</button>
             </div>
 
