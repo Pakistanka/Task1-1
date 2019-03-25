@@ -17,8 +17,9 @@ $(document).ready(function(){
 
   $('.form__text, .form__link').hide();
 
-  $('form__button').click(function() {
+  $('.form__button').click(function() {
     // You missed a dot before $('form__button') => $('.form__button')
+    // I've added it. 
     $('.form__text, .form__link').show();
   });
 
